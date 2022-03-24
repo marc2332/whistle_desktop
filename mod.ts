@@ -37,11 +37,11 @@ mainWindow.setHtml(`
                     background: rgb(60, 130, 230);
                 }
                 #run {
-                    top: 20px;
+                    top: 70px;
                     right: 20px;
                 }
                 #compile {
-                    top: 70px;
+                    top: 20px;
                     right: 20px;
                 }
             </style>
@@ -50,8 +50,8 @@ mainWindow.setHtml(`
             <div><div id="input-ws" contentEditable  spellcheck="false">export fn add(a: i32, b: i32, c: i32): i32 { return a + b + c }</div></div>
             <div><div id="input-js" contentEditable  spellcheck="false">console.log(whistle.add(10,5,15))</div></div>
             <div><div id="output"></div></div>
-            <button id="run" onclick="run()"> Run </button>
             <button id="compile" onclick="compile()"> Compile </button>
+            <button id="run" onclick="run()"> Run </button>
         </body>
         <script>
             async function compile(){
